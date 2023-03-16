@@ -10,5 +10,6 @@ Router.map(function () {
   this.route('clothes', function () {
     this.route('t-shirt');
   });
-  this.route('item');
+  this.route('item', { path: '/item/:item_id' });
+  this.route('not-found', { path: '/*path' });
 });
